@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>装甲战争</title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/com.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--音乐-->
+	<div class="icon-audio" id="music_icon" data-type="audio">
+		<div class="icon-audio-on " data-action="Action://music#off"><i class="playmusic"></i></div>
+		<div class="icon-audio-off hide" data-action="Action://music#on"></div>
+		<audio preload="preload" loop autoplay="autoplay"  id="audio" src="musrc/m1.mp3"><source src="musrc/m1.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		<!--自动播放 -->
+	</div>
+
+	
+	<!--pages-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        	
+        	<div class="loading swiper-slide" id="loader" >
+				<section  class="loader">
+			        <div class="loader__bar">
+			            <div class="loader__progress-bg"></div>
+			            <div id="loader__progress" class="loader__progress"></div>
+			            <div id="loader__info" class="loader__info">Loading 0%</div>
+	        			<h2 class="loadingtit"><img src="images/loadingtit.png"/></h2>
+			        </div>
+			   </section>
+        	</div>
+        	
+            <div class="swiper-slide">
+            	<div class="page1 pages">
+            		<p class=" hometit ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><a href="javascript:;" class="logo"><img src="images/logo.png"/></a><a href="javascript:;" class="zn6"><img src="images/6zn.png"/></a></p>
+            		<p class="tit1 ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s"><img src="images/tit1.png"/></p>
+            		<p class="tit2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><img src="images/tit2.png"/></p>
+            		<p class="tit3 ani" swiper-animate-effect="bounceInDown " swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><a href="javascript:;" class="logoin"><img src="images/tit3.png"/></a></p>
+            	</div>
+            </div>
+        </div>
+        <!--pages-btn-->
+        <div class="swiper-pagination"></div>
+    </div>
+	    
+    <script src="js/common201610.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/imgLoader.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+    imgLoader(["musrc/m1.mp3","font/FZZYJT.ttf","font/ll.ttf","font/zy.ttf","images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg","images/6zn.png","images/b.png","images/bc.png","images/n.png","images/nc.png","images/wz1.png","images/wz2.png","images/wz3.png","images/ch.png","images/dl_btn.png","images/loading.png","images/loadingtit.png","images/loginbg.png","images/tit1.png","images/tit2.png","images/tit3.png","images/tit4.png","images/xz.png","images/p3/p3-1.png","images/p3/p3-2.png","images/p3/p3-3.png","images/p3/p3-4.png","images/p3/p3-5.png","images/p4/p4-1.png","images/p4/p4-2.png","images/p4/p4-3.png","images/p4/p4-4.png","images/p4/p4-5.png","images/p5/p5-1.png","images/p5/p5-2.png","images/p5/p5-3.png","images/p5/p5-4.png","images/p5/p5-5.png","images/p6/p6-1.png","images/p6/p6-2.png","images/p6/p6-3.png","images/p6/p6-4.png","images/p6/p6-5.png"], function (percentage) {
+        var percentT = percentage * 100;
+        $('#loader__info').html('Loading ' + (parseInt(percentT)) + '%');
+        $('#loader__progress')[0].style.width = percentT + '%';
+        if (percentage == 1) {
+            $('#loader').remove();
+            //分屏
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: null,
+		        direction: 'vertical',
+		        onInit: function(swiper){ 
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				  }, 
+				  onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				  } 
+		    });
+        }
+    });
+   
+   
+	</script>
+</body>
+</html>
+
+
