@@ -3211,16 +3211,16 @@ Copyright (c) 2015 Daniel Eden
 
 
 @-webkit-keyframes GZ {
-	0%{-webkit-transform:scale(3.5) ;transform:scale(3.5) ;opacity: 0;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 2.8rem;}
-	50%{-webkit-transform:scale(1.2) ; transform:scale(1.2) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 2.8rem;}
-	100%{-webkit-transform:scale(1) ; transform:scale(1) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 90%;margin-left: -1.5rem;top: 2.8rem;}
+	0%{-webkit-transform:scale(3.5) ;transform:scale(3.5) ;opacity: 0;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 3rem;}
+	50%{-webkit-transform:scale(1.2) ; transform:scale(1.2) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 3rem;}
+	100%{-webkit-transform:scale(1) ; transform:scale(1) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 150%;margin-left: -1.5rem;top: 3rem;}
 	
 }
 
 @keyframes GZ {
-	0%{-webkit-transform:scale(3.5) ;transform:scale(3.5) ;opacity: 0;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 2.8rem;}
-	50%{-webkit-transform:scale(1.2) ; transform:scale(1.2) ; opacity: 1;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 2.8rem;}
-	100%{-webkit-transform:scale(1) ; transform:scale(1) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 90%;margin-left: -1.5rem;top: 2.8rem;}
+	0%{-webkit-transform:scale(3.5) ;transform:scale(3.5) ;opacity: 0;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 3rem;}
+	50%{-webkit-transform:scale(1.2) ; transform:scale(1.2) ; opacity: 1;width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 50%;margin-left: -1.5rem;top: 3rem;}
+	100%{-webkit-transform:scale(1) ; transform:scale(1) ;opacity: 1; width: 4.54rem;height: 3.8rem;position: absolute;top: 0; left: 150%;margin-left: -1.5rem;top: 3rem;}
 }
 
 .gaizhang {
