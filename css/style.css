@@ -121,7 +121,9 @@ dd.p3{padding-bottom: .1rem;}
 
 /*fx*/
 .fx{display: none;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.5);}
-.fx p{float: right;}
+.fx p{float: right;width: 4.41rem;height: 3.63rem;}
+.fx p img{width: 100%;height: 100%;}
+
 
 /*登陆*/
 #alertInfo{ width:100%;}
