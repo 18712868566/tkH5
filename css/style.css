@@ -90,7 +90,7 @@ p{color: #fff;width: 100%;text-align: center;}
 .p-2-1,.p-3-1{font-size: .3333rem;width: 80%;margin: 0 auto;text-align: left;color: #8f0000;padding-bottom: .2rem;}
 .dt-2-1,.dt-3-1{border-bottom: 3px solid #8f0000;color: #000;}
 .p-2-2{margin: 0 auto;font-size: .25rem;color: #660000;padding-bottom: .15rem;}
-.p-2-2 span{color: #000;font-size: .3333rem;border-bottom: 1px solid #660000;padding: 0 .1rem;margin: 0 .1rem;display: inline-block;min-width: 1rem;font-style: normal;font-family: "微软雅黑";}
+.p-2-2 span{color: #000;font-size: .3333rem;border-bottom: 1px solid #660000;padding: 0 .1rem;display: inline-block;min-width: 1rem;font-style: normal;font-family: "微软雅黑";}
 .tit5,.titp-4{position: relative;width: 4.21rem;height: 4.72rem;margin: 0 auto;}
 .ch{position: absolute;left: 0;top: 0.05rem;font-size: .3333rem;color: #8f0000;}
 
